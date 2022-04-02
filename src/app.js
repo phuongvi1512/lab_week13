@@ -10,11 +10,10 @@ originalContainer.addEventListener('click', (evt) => {
 
 const clearButton = document.querySelector('button')
 
-clearButton.addEventListener('click', () => {
-    const childDivcopyContainer = document.querySelector('.copy-container div')
-    function removeDiv(div) {
-        div.remove()
+function clearCopiedDiv() {
+    const allCopies = document.querySelectorAll('.copy-container div')
+    for (const copy of allCopies) {
+        copy.remove()
     }
-    removeDiv(childDivcopyContainer)
-});
-
+}
+clearButton.addEventListener('click', clearCopiedDiv)
