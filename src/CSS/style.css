@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+section div,h2,button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+button {
+    background-color: cornsilk;
+    border: none;
+    margin: 4px 2px;;
+}
